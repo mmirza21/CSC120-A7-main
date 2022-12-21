@@ -5,6 +5,10 @@ public class Cafe extends Building {
     private int nCreams; // The number of "splashes" of cream remaining in inventory
     private int nCups; // The number of to-go cups remaining in inventory
 
+    public Cafe(String name, String address, int nFloors) {
+        super(name, address, nFloors);
+    }
+    //Overloaded constructor for Cafe
     public Cafe(String name, String address, int nFloors, int coffee, int sugar, int cream, int cups) {
         super(name, address, nFloors);
         this.nCoffeeOunces = coffee;
